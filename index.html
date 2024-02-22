@@ -3,47 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Dallas</h1>
-        <p>
-          Wednesday 19:41, moderate rain
-          <br />
-          Humidity: 87%, Wind: 7.2km/h
-        </p>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+    <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Dallas</h1>
+          <p class="weather-app-details">
+            Wednesday 19:41, moderate rain
+            <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong> 
+          </p>
+        </div>
+        <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌥️ </div>
+            <div class="weather-app-temperature">24</div> 
+            <div class="weather-app-unit">℉</div></div>
       </div>
-      <div>🌥️ 24 ℉</div>
-    </main>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/leslysarinana" target="_blank">
-        Lesly Sarinana</a
-      >, code hosted on
-      <a href="https://github.com/leslysarinana/weather-app" target="_blank"
-        >GitHub</a
-      >
-      and website hosted
-      <a
-        href="https://app.netlify.com/teams/leslysarinana/overview"
-        target="_blank"
-        >on Netlify</a
-      >
-    </footer>
-   </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/leslysarinana" target="_blank">
+          Lesly Sarinana</a
+        >, code hosted on
+        <a href="https://github.com/leslysarinana/weather-app" target="_blank"
+          >GitHub</a
+        >
+        and website hosted
+        <a
+          href="https://app.netlify.com/teams/leslysarinana/overview"
+          target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
